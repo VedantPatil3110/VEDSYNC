@@ -1,118 +1,109 @@
-Vedsync: A Real-time Collaborative Code Editor
-Vedsync is a real-time, browser-based code editor that allows multiple users to collaborate on code in a shared room. It's built to provide a seamless and instant coding experience, making it perfect for pair programming, remote interviews, and collaborative learning.
+🚀 Vedsync: A Real-time Collaborative Code Editor
+Vedsync is a real-time, browser-based code editor that allows multiple users to collaborate on code in a shared room. It's designed for pair programming, remote interviews, and collaborative learning—providing a seamless, instant coding experience.
 
-🌟 Features
-Real-time Synchronization: All users in a room see code changes instantly as they are typed.
+✨ Features
+⚡ Real-time Synchronization – See code changes instantly as they are typed by any user in the room.
 
-Persistent Rooms: Users can create a new room with a unique ID or join an existing one using a room ID and username.
+🔗 Persistent Rooms – Create a new room with a unique ID or join one using a room ID and username.
 
-User Presence: The application displays a list of all connected clients in a room, with a unique avatar for each user.
+👥 User Presence – Displays all connected users in a room with unique avatars.
 
-Code Sharing: New users joining a room automatically receive the latest code, ensuring they are always up-to-date.
+📤 Code Sharing – New users automatically receive the latest code upon joining.
 
-Intuitive UI: A clean and simple interface for a distraction-free coding environment.
+🖥 Intuitive UI – Clean, distraction-free interface for smooth collaboration.
 
-Notifications: Uses react-hot-toast to provide clear feedback on user actions like creating a room, joining, or leaving.
+🔔 Notifications – Real-time feedback for actions like joining, leaving, and creating rooms (powered by react-hot-toast).
 
-🚀 Technologies Used
+🛠 Tech Stack
 Frontend
-React: For building the user interface.
 
-Codemirror: A versatile text editor implemented in JavaScript for the browser.
+⚛ React – User interface
 
-react-router-dom: For client-side routing.
+📝 CodeMirror – Browser-based code editor
 
-react-hot-toast: For elegant notifications.
+🌐 React Router DOM – Client-side routing
 
-uuid: To generate unique room IDs.
+🔔 React Hot Toast – Notifications
 
-react-avatar: To create user avatars.
+🆔 UUID – Unique room ID generation
+
+👤 React Avatar – User avatars
 
 Backend
-Node.js & Express: The runtime environment and web framework for the server.
 
-Socket.IO: The core technology for enabling low-latency, bidirectional, and event-based communication between the server and clients.
+🟢 Node.js + Express – Backend server
 
-🛠️ Setup and Installation
+🔄 Socket.IO – Real-time communication
+
+📦 Setup & Installation
 Prerequisites
-Make sure you have Node.js and Yarn installed.
+Node.js
+
+Yarn
 
 Steps
-Clone the repository:
-
-Bash
-
+bash
+Copy
+Edit
+# Clone the repository
 git clone https://github.com/VedantPatil3110/VEDSYNC.git
 cd VEDSYNC
-Install dependencies:
 
-Bash
-
+# Install dependencies
 yarn install
-Create a .env file for the backend:
-Create a .env file in the root directory. Your backend will listen on port 5000 locally.
+Create .env file in the root directory:
 
-Code snippet
-
+env
+Copy
+Edit
 PORT=5000
 Run the application locally:
 
-Start the backend server in one terminal:
-
-Bash
-
+bash
+Copy
+Edit
+# Start backend
 yarn server
-Start the frontend development server in a separate terminal:
 
-Bash
-
+# Start frontend
 yarn start
-The application will be running on http://localhost:3000.
+App will be available at: http://localhost:3000
 
-☁️ Deployment
-This project requires a two-part deployment: one for the frontend and one for the backend.
+☁ Deployment
+Frontend (Vercel)
+Connect your GitHub repo to Vercel.
 
-Frontend Deployment (Vercel)
-The React frontend is hosted on Vercel.
+Deploy the React frontend.
 
-Connect your GitHub repository to Vercel.
-
-Vercel will automatically detect the React project and deploy it.
-
-Once deployed, you will need to add an environment variable to connect to the backend.
-
-Backend Deployment (Render)
-The Node.js and Socket.IO backend is hosted on Render.
-
-Connect your GitHub repository to Render and create a new Web Service.
-
-Set the Root Directory to blank.
-
-Set the Build Command to yarn install.
-
-Set the Start Command to node server.js.
-
-Final Connection
-After both services are deployed, get the public URL for your Render backend (e.g., https://vedsync-backend.onrender.com). Go to your Vercel dashboard for the frontend project, navigate to Settings > Environment Variables, and add the following:
+Add environment variable in Vercel:
 
 Name: REACT_APP_BACKEND_URL
 
 Value: https://vedsync-backend.onrender.com
 
-After saving the environment variable, Vercel will trigger a new deployment, and your frontend will correctly connect to your backend.
+Backend (Render)
+Connect your GitHub repo to Render.
 
-🤝 How to Use
-Create a Room: On the homepage, click "new Room" to generate a unique room ID.
+Create Web Service:
 
-Join a Room: Enter a username and a valid room ID (copied from another user) and click "JOIN".
+Root Directory: (leave blank)
 
-Collaborate: Start typing code! All other users in the room will see your changes in real-time.
+Build Command: yarn install
 
-Manage: Use the "Copy ROOM ID" button to invite others and the "Leave" button to exit the room.
+Start Command: node server.js
+
+💡 How to Use
+Create a Room – Click "New Room" to generate a unique ID.
+
+Join a Room – Enter your username and room ID.
+
+Collaborate – Write code, watch changes sync instantly.
+
+Invite Others – Share the room ID using "Copy ROOM ID".
 
 📬 Contact
-If you have any issues, feel free to contact vedantpatil3110@gmail.com.
-
+📧 Email: vedantpatil3110@gmail.com
+💻 GitHub: VedantPatil3110
 
 
 
