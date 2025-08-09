@@ -11,7 +11,8 @@ const path = require('path');
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: 'vedsync-5120tqjva-badboy3110s-projects.vercel.app',
+        origin: '*',
+        // origin: 'vedsync-5120tqjva-badboy3110s-projects.vercel.app',
         methods: ['GET', 'POST'],
     },
 });
