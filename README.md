@@ -1,4 +1,4 @@
-🚀 Vedsync: A Real-time Collaborative Code Editor
+#🚀 Vedsync: A Real-time Collaborative Code Editor
 Vedsync is a real-time, browser-based code editor that allows multiple users to collaborate on code in a shared room. It's designed for pair programming, remote interviews, and collaborative learning—providing a seamless, instant coding experience.
 
 ✨ Features
