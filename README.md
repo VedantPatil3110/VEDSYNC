@@ -1,3 +1,122 @@
+Vedsync: A Real-time Collaborative Code Editor
+Vedsync is a real-time, browser-based code editor that allows multiple users to collaborate on code in a shared room. It's built to provide a seamless and instant coding experience, making it perfect for pair programming, remote interviews, and collaborative learning.
+
+🌟 Features
+Real-time Synchronization: All users in a room see code changes instantly as they are typed.
+
+Persistent Rooms: Users can create a new room with a unique ID or join an existing one using a room ID and username.
+
+User Presence: The application displays a list of all connected clients in a room, with a unique avatar for each user.
+
+Code Sharing: New users joining a room automatically receive the latest code, ensuring they are always up-to-date.
+
+Intuitive UI: A clean and simple interface for a distraction-free coding environment.
+
+Notifications: Uses react-hot-toast to provide clear feedback on user actions like creating a room, joining, or leaving.
+
+🚀 Technologies Used
+Frontend
+React: For building the user interface.
+
+Codemirror: A versatile text editor implemented in JavaScript for the browser.
+
+react-router-dom: For client-side routing.
+
+react-hot-toast: For elegant notifications.
+
+uuid: To generate unique room IDs.
+
+react-avatar: To create user avatars.
+
+Backend
+Node.js & Express: The runtime environment and web framework for the server.
+
+Socket.IO: The core technology for enabling low-latency, bidirectional, and event-based communication between the server and clients.
+
+🛠️ Setup and Installation
+Prerequisites
+Make sure you have Node.js and Yarn installed.
+
+Steps
+Clone the repository:
+
+Bash
+
+git clone https://github.com/VedantPatil3110/VEDSYNC.git
+cd VEDSYNC
+Install dependencies:
+
+Bash
+
+yarn install
+Create a .env file for the backend:
+Create a .env file in the root directory. Your backend will listen on port 5000 locally.
+
+Code snippet
+
+PORT=5000
+Run the application locally:
+
+Start the backend server in one terminal:
+
+Bash
+
+yarn server
+Start the frontend development server in a separate terminal:
+
+Bash
+
+yarn start
+The application will be running on http://localhost:3000.
+
+☁️ Deployment
+This project requires a two-part deployment: one for the frontend and one for the backend.
+
+Frontend Deployment (Vercel)
+The React frontend is hosted on Vercel.
+
+Connect your GitHub repository to Vercel.
+
+Vercel will automatically detect the React project and deploy it.
+
+Once deployed, you will need to add an environment variable to connect to the backend.
+
+Backend Deployment (Render)
+The Node.js and Socket.IO backend is hosted on Render.
+
+Connect your GitHub repository to Render and create a new Web Service.
+
+Set the Root Directory to blank.
+
+Set the Build Command to yarn install.
+
+Set the Start Command to node server.js.
+
+Final Connection
+After both services are deployed, get the public URL for your Render backend (e.g., https://vedsync-backend.onrender.com). Go to your Vercel dashboard for the frontend project, navigate to Settings > Environment Variables, and add the following:
+
+Name: REACT_APP_BACKEND_URL
+
+Value: https://vedsync-backend.onrender.com
+
+After saving the environment variable, Vercel will trigger a new deployment, and your frontend will correctly connect to your backend.
+
+🤝 How to Use
+Create a Room: On the homepage, click "new Room" to generate a unique room ID.
+
+Join a Room: Enter a username and a valid room ID (copied from another user) and click "JOIN".
+
+Collaborate: Start typing code! All other users in the room will see your changes in real-time.
+
+Manage: Use the "Copy ROOM ID" button to invite others and the "Leave" button to exit the room.
+
+📬 Contact
+If you have any issues, feel free to contact vedantpatil3110@gmail.com.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -6,7 +125,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn startfront`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
